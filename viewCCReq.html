@@ -1,0 +1,135 @@
+<!-- login.ejs -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Loan Requests</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+      section {
+        padding: 100px 200px;
+      }
+      h1 {
+        color: #450663;
+        font-family: "Trebuchet MS";
+        font-size: 34px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 3rem;
+      }
+      body {
+        background-image: url("img9.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      .main {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .reqForms {
+        background: white;
+        min-height: 6em;
+        width: 30em;
+        border-radius: 10px;
+        margin: 20px;
+        transition: 0.7s ease;
+        padding: 2em;
+      }
+      .reqForms:hover {
+        transform: scale(1.1);
+        border: 1px solid #420e5a;
+        opacity: 0.9;
+      }
+      .Info {
+        font-size: 0.8em;
+        color: rgb(65, 65, 65);
+      }
+      .title {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-family: "Trebuchet MS";
+        font-size: 17px;
+        font-weight: 600;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>SE404 Banking System</h1>
+    <section class="main">
+      <div style="display: flex; flex-direction: column">
+        <div class="reqForms">
+          <strong class="title"
+            ><span>Credit Card Number : 5200 8282 8282 8210 </span></strong
+          >
+          <p class="Info">Credit Card Type: MasterCard</p>
+          <p class="Info">
+            Credit Card Request Status:
+            <span style="color: green">Accepted</span>
+          </p>
+        </div>
+
+        <div class="reqForms">
+          <strong class="title"
+            ><span>Credit Card Number : 4000 0566 5566 5556 </span></strong
+          >
+          <p class="Info">Credit Card Type: Visa</p>
+          <p class="Info">
+            Credit Card Request Status:
+            <span style="color: green">Accepted</span>
+          </p>
+        </div>
+
+        <div class="reqForms">
+          <strong class="title"
+            ><span>Credit Card Number : 3714 4963 5398 4319 </span></strong
+          >
+          <p class="Info">Credit Card Type: American Express</p>
+          <p class="Info">
+            Credit Card Request Status:
+            <span style="color: green">Accepted</span>
+          </p>
+        </div>
+
+        <div class="reqForms">
+          <strong class="title"
+            ><span
+              >Credit Card Number : Not Yet Assigned (Will Be Assigned If
+              Request Got Accepted)
+            </span></strong
+          >
+          <p class="Info">Credit Card Type: Discover</p>
+          <p class="Info">
+            Credit Card Request Status:
+            <span>Pending</span>
+          </p>
+        </div>
+        <div class="reqForms">
+          <strong class="title"
+            ><span>Credit Card Number : N/A. (Rejected Card) </span></strong
+          >
+          <p class="Info">Credit Card Type: Platinum</p>
+          <p class="Info">
+            Credit Card Request Status:
+            <span style="color: red">Rejected</span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
